@@ -1,0 +1,233 @@
+body {
+  margin: 0px;
+  font-family: "Roboto", "Arial", sans-serif;
+  height: 0px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.fixed-container {
+  position: fixed;
+  width: 100%;
+  z-index: 244;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  padding: 11px 16px 10px 16px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 57px;
+  box-sizing: border-box;
+  width: 169px;
+}
+.logo img {
+  width: 100px;
+  height: 30px;
+  margin: 0px;
+}
+.icon {
+  padding: 18px;
+}
+.icon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.thumbnail {
+  padding-left: 12px;
+}
+.icon_search {
+  display: inline-block;
+}
+.center {
+  justify-content: end;
+  width: 985px;
+  display: flex;
+  height: 60px;
+}
+.center button.search {
+  width: 70px;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.center .searchbox {
+  background-color: white;
+  width: 720px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  margin-left: 40px;
+  border-radius: 25px 0 0 25px;
+}
+.center button.microphone {
+  border: none;
+  margin-left: 25px;
+  width: 60px;
+  border-radius: 150%;
+}
+.center button.microphone:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.end {
+  display: flex;
+  width: 255px;
+  height: 60px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.end button {
+  border: none;
+  background-color: rgba(94, 93, 91, 0.068);
+  width: 60px;
+  border-radius: 150%;
+}
+.end .live-div,
+.end .nonti {
+  padding: 0px 6px;
+}
+.end .live {
+  width: 50px;
+  height: 50px;
+}
+
+.end button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.akun {
+  padding: 0px 6px;
+}
+.akun .foto {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: linear-gradient(red, blue, green);
+}
+
+/* END NAVBAR */
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  z-index: -2;
+  top: 80px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vw;
+  width: 15rem;
+  background-color: rgb(255, 255, 255);
+}
+.item {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.icon-item {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 0 23px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.icon-item i {
+  padding: 9px;
+}
+.icon-item.Pesan i {
+  padding: 11px;
+}
+.icon-item.Uploud i {
+  padding: 11px;
+}
+.icon-item p {
+  text-align: start;
+  flex: 2;
+  font-size: 1.4rem;
+}
+.conten {
+  z-index: -6;
+  position: absolute;
+  margin-top: 81px;
+  margin-left: 255px;
+  width: 100%;
+  height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.171);   */
+}
+.playlist {
+  position: fixed;
+  padding: 16px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.playlist .item-playlist {
+  display: grid;
+  width: 79%;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 120px));
+  /* grid-auto-flow: column; */
+  /* gap: 10px; */
+  column-gap: 25px;
+  row-gap: 1rem;
+}
+.playlist .item-playlist .item-name {
+  padding: 9px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.09);
+}
+.playlist .item-playlist .item-name.senya {
+  color: white;
+  background-color: black;
+}
+.video-conten {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 80px;
+  /* height: 200vh; */
+  display: grid;
+  column-gap: 17px;
+  row-gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 560px));
+}
+.video-conten .container-video {
+  height: 100%;
+  width: auto;
+}
+.container-video .deskrepsi {
+  height: 78px;
+}
+.container-video h3 {
+  padding: 0px;
+  margin: 0px;
+}
+.video-conten .container-video .jdudl-video {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 500px;
+}
+.video-conten .container-video .text-video {
+  color: rgb(102, 100, 100);
+  line-height: 2.2rem;
+}
+.video-conten .container-video img {
+  border-radius: 15px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .playlist {
+    padding: 0 5px 10px 5px;
+    width: 505px;
+  }
+}
